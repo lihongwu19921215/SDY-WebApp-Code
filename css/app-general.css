@@ -1,0 +1,59 @@
+body {
+    font-size: 62.5%;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+    color: #4c4e59;
+    margin:0;
+    padding:0
+}
+ul,li {
+    list-style:none
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+img {
+    border:0;
+    vertical-align:top;
+    max-width:100%;
+    height:auto
+}
+em {
+    font-style:italic
+}
+th {
+    font-weight:700;
+    text-align:center
+}
+caption {
+    margin-bottom:.5em;
+    text-align:center
+}
+p,fieldset,table,pre {
+    margin-bottom:10px
+}
+p {
+    text-indent:0em
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration:none;
+    font-size:14px
+}
+a:hover {
+    text-decoration:underline;
+    cursor:pointer
+}
+sup {
+    vertical-align:text-top
+}
+sub {
+    vertical-align:text-bottom
+}
+hr {
+
+}
+.wrapper {
+    width:100%
+}

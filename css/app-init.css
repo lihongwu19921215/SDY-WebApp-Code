@@ -1,0 +1,161 @@
+body {
+    font-size: 62.5%;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+    font-size: 13px;
+    color: #4c4e59;
+    margin:0;
+    padding:0
+}
+ul,li {
+    list-style:none
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+img {
+    border:0;
+    vertical-align:top;
+    max-width:100%;
+    height:auto
+}
+em {
+    font-style:italic
+}
+th {
+    font-weight:700;
+    text-align:center
+}
+caption {
+    margin-bottom:.5em;
+    text-align:center
+}
+p,fieldset,table,pre {
+    margin-bottom:10px
+}
+p {
+    text-indent:0em
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration:none;
+    font-size:14px
+}
+a:hover {
+    text-decoration:underline;
+    cursor:pointer
+}
+sup {
+    vertical-align:text-top
+}
+sub {
+    vertical-align:text-bottom
+}
+input {
+    vertical-align:middle;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    _height:auto;
+    _line-height:15px
+}
+hr {
+    color:#e4e5e7
+}
+.wrapper {
+    width:100%
+}
+.wrapper_content {
+    max-width:768px;
+    margin:0 auto
+}
+.content {
+   margin: 0 15px;
+}
+
+.fill {
+    margin:0;
+    padding:0;
+    display:block;
+    width:100%
+}
+.gap {
+    line-height:10px;
+    height:10px;
+}
+
+.entry-header > .entry-title {
+    display: none;
+    height: 0px;
+}
+
+hr {
+    color: #e4e5e7;
+}
+
+.label-title {
+    color: #3a3c48;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.label-desc {
+    color: #797c87;
+    font-size: 12px;
+}
+
+.video-box {
+    display:block;
+    margin:0 auto;
+    width:100%
+}
+
+.fleft {
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+
+.tleft{
+    text-align: left;
+}
+
+.tright{
+    text-align: right;
+}
+
+.tcenter{
+    text-align: center;
+}
+
+
+@media screen and (max-width:320px) {
+    .video-box {
+        min-height:175px;
+        max-height:180px
+    }
+}@media screen and (min-width:321px) and (max-width:375px) {
+    .video-box {
+        min-height:205px;
+        max-height:210px
+    }
+}@media screen and (min-width:376px) and (max-width:480px) {
+    .video-box {
+        min-height:265px;
+        max-height:270px
+    }
+}@media screen and (min-width:481px) and (max-width:540px) {
+    .video-box {
+        min-height:300px;
+        max-height:305px
+    }
+}@media screen and (min-width:541px) {
+    .video-box {
+        max-width:768px;
+        min-height:430px;
+        max-height:435px
+    }
+}
