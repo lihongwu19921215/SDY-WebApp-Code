@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_rs3r6hdtqsd78pvi.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
     <style type="text/css">
         .page-current {
             background-color: #ececec;
@@ -37,6 +38,33 @@
 
         .list-block input[type="tel"], .list-block input[type="number"], .list-block input[type="password"] {
             font-size: .75rem;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-container-horizontal>.swiper-pagination {
+            bottom: 1.7rem;
         }
     </style>
     <script>
@@ -54,8 +82,20 @@
 <div class="page-group">
     <div class="page page-current">
         <div class="content">
-            <div class="row">
+            <div class="row" style="display: none;">
                 <img src="//s-img.saidaoyou.com/wap/online/public/image/invite/reg_banner_top.png" width="100%"/>
+            </div>
+            <div class="row">
+            <!-- Slider -->
+            <div class="swiper-container" data-space-between='10'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="//s-img.saidaoyou.com/wap/online/public/image/invite/banner/1.jpg" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="//s-img.saidaoyou.com/wap/online/public/image/invite/banner/2.jpg" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="//s-img.saidaoyou.com/wap/online/public/image/invite/banner/3.jpg" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="//s-img.saidaoyou.com/wap/online/public/image/invite/banner/4.jpg" alt="" width="100%"></div>
+                </div>
+                <div class="swiper-pagination" style="display: block;"></div>
+            </div>
             </div>
             <div class="list-block" style="margin-top:15px;margin-bottom:50px;">
                 <ul>
@@ -172,6 +212,13 @@
         var num_reg = /^\d{4,6}$/;
         return num_reg.test(code);
     };
+    $(function() {
+        $(".swiper-container").swiper({
+            pagination: '.swiper-pagination',
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        });
+    });
 </script>
 </body>
 </html>
